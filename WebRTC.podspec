@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
     s.name         = "WebRTC"
     s.version      = "0.0.1"
     s.summary      = "A brief description of MyFramework project."
-    s.homepage     = "http://hiphipjorge.com"
+    s.homepage     = "https://github.com/thejsj/WebRTCMacOS"
     s.license = { :type => 'Copyright', :text => <<-LICENSE
                    Copyright 2018
                    Permission is granted to...
@@ -10,10 +10,10 @@ Pod::Spec.new do |s|
                 }
 
     s.author             = { "$(git config user.name)" => "$(git config user.email)" }
-    s.source       = { :git => "$HOME/personal/WebRTCMacOS/.git", :tag => "#{s.version}" }
+    s.source       = { :git => "https://github.com/thejsj/WebRTCMacOS", :branch => "master" }
 
-    s.public_header_files = "WebRTCMacOS.framework/Headers/*.h"
-    s.source_files = "WebRTCMacOS.framework/Headers/*.h"
-    s.vendored_frameworks = "WebRTCMacOS.framework"
+    s.vendored_frameworks = [
+      "Frameworks/frameworks/WebRTC.framework"
+    ]
     s.platform = :macos
 end
