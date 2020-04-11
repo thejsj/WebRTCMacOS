@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
     s.source       = { :git => "https://github.com/thejsj/WebRTCMacOS", :branch => "master" }
 
     s.vendored_frameworks = [
-      "Frameworks/frameworks/WebRTC.framework"
+      "Framework/"
     ]
     s.platform = :macos
 end
