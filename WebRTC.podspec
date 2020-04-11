@@ -9,11 +9,10 @@ Pod::Spec.new do |s|
                   LICENSE
                 }
 
-    s.author             = { "$(git config user.name)" => "$(git config user.email)" }
-    s.source       = { :git => "https://github.com/thejsj/WebRTCMacOS", :branch => "master" }
+    s.author = { "$(git config user.name)" => "$(git config user.email)" }
+    s.source = { :git => "https://github.com/thejsj/WebRTCMacOS.git", :tag => "v0.0.2" }
 
-    s.vendored_frameworks = [
-      "Framework/"
-    ]
+    s.source_files = "Framework/**/*"
+
     s.platform = :macos
 end
