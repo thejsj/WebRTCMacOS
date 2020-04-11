@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "WebRTC"
-    s.version      = "0.0.1"
+    s.version      = "0.0.2"
     s.summary      = "A brief description of MyFramework project."
     s.homepage     = "https://github.com/thejsj/WebRTCMacOS"
     s.license = { :type => 'Copyright', :text => <<-LICENSE
